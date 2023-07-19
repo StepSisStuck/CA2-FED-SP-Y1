@@ -1,13 +1,15 @@
-/* Title: Style.css */
-
 /* Global styles */
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 400; /* Normal font weight */
     margin: 0;
     padding: 0;
+    /* Add padding-top to push main content below the fixed header */
+    padding-top: 80px;
 }
+
 
 /* Container styles */
 .container {
@@ -34,8 +36,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
-    position: relative; /* This line is not needed, since position is already set to fixed */
     z-index: 999;
 }
 
@@ -139,7 +139,7 @@ header nav a {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
+    z-index: 998;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
@@ -175,21 +175,7 @@ header nav a {
     color: #999;
 }
 
-/* Styling for the popup container */
-#popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0.5s;
-}
-
-/* Styling for the popup contents */
+/* Additional styles for the dropdown box */
 #popup h3 {
     color: #fff;
     margin: 20px auto;
@@ -253,6 +239,43 @@ footer p {
     /* Adjust "Empowering Sustainability" position for mobile */
     .hero-content h2 {
         position: static;
+    }
+
+    /* Mobile dropdown menu styles */
+    header .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    header .collapse.navbar-collapse {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #f8f9fa;
+        z-index: -1;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    header .collapse.show.navbar-collapse {
+        height: auto;
+        z-index: 1;
+        border-top: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav li {
+        margin-left: 0;
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px 20px;
     }
 }
 
@@ -324,18 +347,10 @@ footer p {
     /* Adjust "Empowering Sustainability" position for desktop */
     .hero-content h2 {
         position: relative;
-        left: -50px; /* Adjust the value to align the header properly */
+        left: -50px;
     }
 }
 
-
-@media (max-width: 767px) {
-    li a[href="Empower.html"] {
-      padding: 203.38px 54px;
-    }
-  } 
-
-/* Set the font size for the header navigation links */
 img.align-right {
     float: right;
     margin: 10px;
@@ -354,4 +369,32 @@ img.align1-right {
 
 #mhead {
     text-shadow: 2px 2px 4px #000000;
+}
+
+
+@media (max-width: 767px) {
+    header .container {
+        height: auto;
+    }
+
+    header .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    header .collapse.navbar-collapse {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #f8f9fa;
+        z-index: -1;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    header .collapse.show.navbar-collapse {
+        height: calc(100vh - 80px);
+        z-index: 1;
+    }
 }
