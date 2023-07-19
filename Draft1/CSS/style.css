@@ -1,6 +1,5 @@
 /* Title: Style.css */
 
-
 /* Global styles */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -30,7 +29,7 @@ a:hover {
 /* Header styles */
 header {
     background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -116,6 +115,7 @@ header nav a {
     font-size: 24px;
     margin-bottom: 40px;
 }
+
 /* Button Element */
 .btn {
     background-color: #007bff;
@@ -226,27 +226,114 @@ footer p {
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 600px) {
+/* (mobile) display one column layout <= 767px */
+@media screen and (max-width: 767px) {
+    /* Adjust header styles for mobile */
     header .container {
-        max-height: 60px;
+        height: 60px;
     }
-}
 
-@media screen and (max-width: 575px) {
-    .container {
-        padding: 0 10px;
+    header h1 {
+        font-size: 20px;
     }
+
     header nav li {
-        margin: 0 10px;
+        margin-left: 10px;
     }
+
     .hero-content h2 {
         font-size: 36px;
     }
+
     .hero-content p {
         font-size: 18px;
         margin-bottom: 20px;
     }
+
+    /* Adjust "Empowering Sustainability" position for mobile */
+    .hero-content h2 {
+        position: static;
+    }
 }
+
+/* (tablet) two column layout >= 768px to 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Adjust header styles for tablet */
+    header .container {
+        height: 70px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header nav li {
+        margin-left: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Adjust hero section for tablet */
+    .hero-content {
+        top: 40%;
+    }
+
+    /* Adjust "Empowering Sustainability" position for tablet */
+    .hero-content h2 {
+        position: relative;
+        left: 0;
+    }
+}
+
+/* (desktop) 3 columns or more >= 1024px */
+@media screen and (min-width: 1024px) {
+    /* Adjust header styles for desktop */
+    header .container {
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav li {
+        margin-left: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    /* Adjust hero section for desktop */
+    .hero-content {
+        top: 50%;
+    }
+
+    /* Adjust "Empowering Sustainability" position for desktop */
+    .hero-content h2 {
+        position: relative;
+        left: -50px; /* Adjust the value to align the header properly */
+    }
+}
+
+
+@media (max-width: 767px) {
+    li a[href="Empower.html"] {
+      padding: 203.38px 54px;
+    }
+  } 
 
 /* Set the font size for the header navigation links */
 img.align-right {
@@ -267,5 +354,4 @@ img.align1-right {
 
 #mhead {
     text-shadow: 2px 2px 4px #000000;
-  }
-
+}
