@@ -38,7 +38,6 @@ header {
     z-index: 1;
     position: relative; /* This line is not needed, since position is already set to fixed */
     z-index: 999;
-
 }
 
 header .container {
@@ -229,7 +228,7 @@ footer p {
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
     header .container {
-        max-height: 85px;
+        max-height: 60px;
     }
 }
 
@@ -271,4 +270,4 @@ img.align1-right {
   }
 
 
-  
+

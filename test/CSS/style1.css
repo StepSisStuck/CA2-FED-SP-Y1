@@ -1,0 +1,92 @@
+/* Title: style1.css */
+
+/* Global styles */
+body {
+    /* Set the font family, size, line height, margin, and padding for the body */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the maximum width, margin, and padding for the container class */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px; /* Adjust the padding value as needed */
+}
+
+/* Set the color and text decoration for links */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Set the color for links on hover */
+a:hover {
+    color: #007bff;
+}
+
+/* Set the display, alignment, and height for the header container */
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    z-index: 999;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+
+/* Set the font size for the header h1 */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Set the display, alignment, padding, and list style for the header navigation ul */
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Set the margin for the header navigation li */
+header nav li {
+    margin-left: 20px;
+}
+
+/* Remove the margin for the first header navigation li */
+header nav li:first-child {
+    margin-left: 0;
+}
+
+/* Set the font size for the header navigation links */
+header nav a {
+    font-size: 18px;
+}
+
+h1, h2, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img.align-right {
+    float: right;
+    margin: 10px;
+    max-width: 50%;
+    height: auto;
+}
