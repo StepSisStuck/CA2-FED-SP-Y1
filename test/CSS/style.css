@@ -22,7 +22,6 @@ a {
     color: #333;
     text-decoration: none;
 }
-
 a:hover {
     color: #007bff;
 }
@@ -35,7 +34,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
     position: relative; /* This line is not needed, since position is already set to fixed */
     z-index: 999;
 }
