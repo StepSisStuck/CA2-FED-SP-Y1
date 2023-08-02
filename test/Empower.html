@@ -5,61 +5,129 @@
     <title>Project: Save the Earth</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    
+    <link rel="stylesheet" href="CSS/style1.css">
+    <style>
+        /* Custom CSS for the header */
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .navbar-brand img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <a href="#"><img src="Image/Main_Logo.png" alt="Logo" width="130" height="130"></a>
-            <nav>
-                <ul>
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="Empower.html">Empowering Sustainability</a> </li>
-                    <li><a href="SP_Enviroment.html">SP Environmental Sustainability Efforts</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <img src="Image/Main_Logo.png" alt="Main Logo" style="max-width: 130px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Empower.html">Empowering Sustainability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="SP_Enviroment.html">SP Environmental Sustainability Efforts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
-         <!-- This is the main content section -->
+        <!-- This is the main content section -->
         <h1>My opinion about what we can do to help in saving the earth.</h1>
         <p>To help save the Earth, we must each embrace our role as stewards of the environment. By making conscious choices in our daily lives, such as reducing waste, conserving energy and water, and supporting sustainable practices, we can contribute to a greener and more sustainable future. Additionally, raising awareness and advocating for policies that prioritize environmental protection are essential steps in creating systemic change. Together, through our individual actions and collective efforts, we have the power to make a positive impact and safeguard the Earth for future generations.</p>
     </div>
 
     <div class="container">
-        <h1>In my journey towards sustainable development and contributing to the preservation of our planet. </h1>
-        <img src="Image/Empower/Nature_Pulu.jpg" alt="Pulu" class="align-right">
-        <h2>Reducing Carbon Footprint:</h2>
-        <ol>
-            <li>Sustainable Transportation: I opted for eco-friendly modes of transportation, such as walking, cycling, and using public transit, to minimize my reliance on private vehicles and reduce carbon emissions.</li>
-            <li>Energy Conservation: I developed habits like turning off lights and appliances when not in use, and switched to energy-efficient LED bulbs to lower energy consumption at home and work.</li>
-            <li>Sustainable Travel Practices: During trips and vacations, I chose environmentally conscious accommodations, carried reusable water bottles and shopping bags, and supported local businesses committed to sustainability.</li>
-        </ol>
-        <img src="Image/Empower/Japan_Bridge.jpg" alt="Japan" class="align-right">
-        <h2>Responsible Consumption and Waste Management:</h2>
-<ol>
-    <li>Zero-Waste Lifestyle: I embraced a zero-waste lifestyle by reducing, reusing, and recycling. I avoided single-use plastics and actively sought reusable alternatives to minimize waste generation.</li>
-    <li>Support for Sustainable Brands: I made informed choices by supporting brands that prioritize sustainability in their production processes, packaging, and supply chains. By encouraging others to do the same, I aimed to drive positive change in the market.</li>
-    <li>Promotion of Circular Economy: I actively participated in recycling programs, separated and disposed of recyclable materials properly, and repurposed or donated items to extend their lifespan and reduce waste.</li>
-</ol>
-
-<img src="Image/Empower/Buildings_Japan.jpg" alt="Beach Clean" class="align-right">
-<h2>Environmental Awareness and Education:</h2>
-<ol>
-    <li>Information Sharing: I utilized social media platforms and personal interactions to share information and resources on environmental sustainability. By initiating conversations and encouraging discussions, I aimed to raise awareness and inspire others to take action.</li>
-    <li>Community Engagement: I volunteered for local environmental initiatives, such as clean-up drives and tree planting activities, to contribute directly to the well-being of my community and environment. I also organized workshops and talks to educate others about sustainable practices.</li>
-    <li>Continuous Learning: I dedicated time to stay informed about current environmental issues, emerging technologies, and sustainable practices. By actively seeking knowledge and supporting organizations working towards sustainable development, I remained engaged in ongoing efforts to protect the planet.</li>
-</ol>
+        <h1>In my journey towards sustainable development and contributing to the preservation of our planet.</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="Image/Empower/Nature_Pulu.jpg" class="d-block w-100" alt="Pulu">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Reducing Carbon Footprint:</h2>
+                            <ol>
+                                <li>Sustainable Transportation: I opted for eco-friendly modes of transportation, such as walking, cycling, and using public transit, to minimize my reliance on private vehicles and reduce carbon emissions.</li>
+                                <li>Energy Conservation: I developed habits like turning off lights and appliances when not in use, and switched to energy-efficient LED bulbs to lower energy consumption at home and work.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="Image/Empower/Japan_Bridge.jpg" class="d-block w-100" alt="Japan">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Responsible Consumption and Waste Management:</h2>
+                            <ol>
+                                <li>Zero-Waste Lifestyle: I embraced a zero-waste lifestyle by reducing, reusing, and recycling. I avoided single-use plastics and actively sought reusable alternatives to minimize waste generation.</li>
+                                <li>Support for Sustainable Brands: I made informed choices by supporting brands that prioritize sustainability in their production processes, packaging, and supply chains.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="Image/Empower/Buildings_Japan.jpg" class="d-block w-100" alt="Beach Clean">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Environmental Awareness:</h2>
+                            <ol>
+                                <li>Information Sharing: I utilized social media platforms and personal interactions to share information and resources on environmental sustainability. By initiating conversations and encouraging discussions, I aimed to raise awareness and inspire others to take action.</li>
+                                <li>Community Engagement: I volunteered for local environmental initiatives, such as clean-up drives and tree planting activities. 
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
     <footer>
         <div class="container">
             <!-- This is the footer section -->
-           <p>&copy; Project: Save the Earth. All rights reserved.</p>
+            <p>&copy; Project: Save the Earth. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
