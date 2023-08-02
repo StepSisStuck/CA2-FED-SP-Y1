@@ -4,11 +4,16 @@
 /* Global styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+
 }
+
+.navbar {
+    min-height: 80px;
+    font-size: 18px;
+}
+
+
+
 
 /* Container styles */
 .container {
@@ -27,55 +32,18 @@ a:hover {
 }
 
 /* Header styles */
-header {
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    position: relative; /* This line is not needed, since position is already set to fixed */
-    z-index: 999;
-}
 
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-}
 
-header h1 {
-    font-size: 24px;
-}
+   
 
-header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    
 
-header nav li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-left: 20px;
-}
 
-header nav li:first-child {
-    margin-left: 0;
-}
 
-header nav a {
-    font-size: 18px;
-}
+
+
+
+
 
 /* Hero section styles */
 .hero {
@@ -174,6 +142,7 @@ header nav a {
     color: #999;
 }
 
+
 /* Styling for the popup container */
 #popup {
     position: fixed;
@@ -224,45 +193,10 @@ footer p {
     color: #888;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-    header .container {
-        max-height: 60px;
-    }
-}
 
-@media screen and (max-width: 575px) {
-    .container {
-        padding: 0 10px;
-    }
-    header nav li {
-        margin: 0 10px;
-    }
-    .hero-content h2 {
-        font-size: 36px;
-    }
-    .hero-content p {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-}
 
 /* Set the font size for the header navigation links */
-img.align-right {
-    float: right;
-    margin: 10px;
-    max-width: 50%;
-    height: auto;
-}
 
-img.align1-right {
-    float: right;
-    margin: 10px;
-    max-width: 30%;
-    height: auto;
-    margin-bottom: 20px;
-    clear: both;
-}
 
 #mhead {
     text-shadow: 2px 2px 4px #000000;
