@@ -6,15 +6,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0;
-    padding: 0;
 }
 
 /* Set the maximum width, margin, and padding for the container class */
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 10px; /* Adjust the padding value as needed */
+
 }
 
 /* Set the color and text decoration for links */

@@ -28,6 +28,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="SP_Enviroment.html">SP Environmental Sustainability Efforts</a>
                         </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -40,15 +43,14 @@
             <div class="hero-content">
                 <h2 id="mhead">Project: Save the Earth</h2>
                 <p>Join me in the fight for a sustainable future.</p>
-                <a href="#popup"><button class="btn" onclick="openPopup()">Get Started</button></a>
+                <a href="#popup"><button class="btn btn-primary" onclick="openPopup()">Get Started</button></a>
             </div>
         </section>
 
         <div id="popup">
-            <span class="popup-close">&times;</span>
+            <span class="popup-close" onclick="closePopup()">&times;</span>
             <br> <br> <br>
             <h3>Choose one of the following button:</h3>
-            <span class="popup-close" onclick="document.getElementById('popup').style.display = 'none';">&times;</span>
             <div class="icon-container">
                 <a href="#intro"><img src="Image/Index/AboutMe.png" alt="Icon 1"></a>
                 <a href="Empower.html"><img src="Image/Index/Empower sus.png" alt="Icon 2"></a>
@@ -62,32 +64,21 @@
             <h1>Hello there! I'm Stanly! </h1> <br>
             <!-- This is the main content section -->
             <div class="col-12 col-md-6 col-lg-4">
-                
-
-
-               
                 <h2>Values</h2>
                 <p>I believe in the importance of honesty, integrity, and empathy. These values guide my interactions with others and shape my approach to both personal and professional relationships. I strive to maintain a strong moral compass and treat everyone with respect and fairness!</p>
-              
             </div>
-
-          
 
             <div class="col-12 col-md-6 col-lg-4">
                 <h2>Interests</h2>
                 <p>I have a deep passion for information technology and the ever-evolving world of technology. I enjoy exploring new technologies and staying up-to-date with the latest industry trends. Outside of technology, I have a keen interest in leadership and project management. I find fulfillment in taking on new challenges and driving successful outcomes.</p>
-               
             </div>
-            
 
             <div class="col-12 col-lg-4">
                 <h2>Personality</h2>
                 <p>I have developed a diverse set of skills through my experiences in the IT industry and my involvement in various activities. I am adaptable and able to thrive in dynamic environments, as demonstrated during my internship at NTUC Income Center. I am skilled in troubleshooting and providing remote user support, and I have a strong technical foundation in areas such as Microsoft Endpoint Configuration Manager, Microsoft Azure, and networking.</p>
-               
             </div>
         </section>
     </div>
-
 
     <footer>
         <div class="container">
@@ -95,20 +86,10 @@
         </div>
     </footer>
 
-    <script>
-        // Function to open the popup
-        function openPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-    </script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript Files/script1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
