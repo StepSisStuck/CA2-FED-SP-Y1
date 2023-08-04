@@ -1,68 +1,10 @@
-/* Title: Style2.css */
-
-/* Set default styles for the body */
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    margin-top: 80px;
+
 }
 
-/* Set the maximum width and center the container */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-/* Adjust the padding of the container */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
-/* Set default styles for links */
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-/* Set styles for links on hover */
-a:hover {
-    color: #007bff;
-}
-
-/* Set styles for the header */
-header {
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    margin-bottom: 0;
-}
-
-/* Set styles for the header container */
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 20px;
-}
-
-/* Set styles for the header title */
-header h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-/* Set styles for the header navigation */
 header nav ul {
     display: flex;
     align-items: center;
@@ -72,96 +14,32 @@ header nav ul {
     list-style: none;
 }
 
-/* Set styles for the header navigation items */
-header nav li {
-    margin-left: 20px;
+
+/* Container styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Set styles for the first header navigation item */
-header nav li:first-child {
-    margin-left: 0;
+/* Link styles */
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #007bff;
 }
 
-/* Set styles for the header navigation links */
-header nav a {
-    font-size: 18px;
-}
 
-/* Set default styles for paragraphs */
-p {
-    margin-bottom: 20px;
-}
-
-/* Set styles for figure boxes and captions */
-figure {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f9f9f9;
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
     text-align: center;
+    clear: both;
 }
 
-/* Set styles for figure captions */
-figcaption {
-    font-style: italic;
+footer p {
+    margin: 0;
     color: #888;
-    margin-top: 10px;
 }
-
-/* Set styles for the hero section background image */
-.hero {
-    height: 250px;
-    background-image: url('sustainability.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-/* Set styles for the container border */
-.container-border {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-/* Set styles for text shadows */
-.text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Set styles for linear gradients */
-.container-gradient {
-	background: linear-gradient(to right, #c2b422, #7690a6);
-}
-
-/* Set styles for 2D transformations */
-.transform {
-    transform: rotate(15deg);
-	margin-bottom: 150px;
-	margin-top: 150px;
-	}
-
-
-/* Set styles for CSS filters */
-.filter {
-    filter: brightness(70%);
-}
-
-
-/* Set styles for the 2x3 grid container */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 20px;
-}
-
-/* Set styles for the 2x3 grid items */
-.grid-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-/* Center the text for the box*/
-.center {
-	text-align: center;
-  }

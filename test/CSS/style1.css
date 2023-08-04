@@ -38,3 +38,16 @@ header nav ul {
     list-style: none;
 }
 
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    color: #888;
+}
+
