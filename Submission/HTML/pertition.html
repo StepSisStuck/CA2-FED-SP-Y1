@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Author: Stanly Lau Wei Bin
+        Class: DCITP/FT/1A/01
+        Description: pertition.html-->
+    <title>Petition to Change the World</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+<style>
+    footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../Image/Main_Logo.png" alt="Logo" width="130" height="130" class="d-inline-block align-top" style="max-height: 100%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Empower.html">Empowering Sustainability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SP_Enviroment.html">SP Environmental Sustainability Efforts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pertition.html">Petition</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Petition to Change the World</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <form id="petitionForm" class="mb-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message to Change the World</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+               
+                <div class="mb-3">
+                    <label class="form-label">Subscribe to Newsletter:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="newsletter" id="newsletterYes" value="yes">
+                        <label class="form-check-label" for="newsletterYes">
+                            Yes, subscribe me to the newsletter.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="newsletter" id="newsletterNo" value="no" checked>
+                        <label class="form-check-label" for="newsletterNo">
+                            No, I do not want to subscribe.
+                        </label>
+                    </div>
+                </div>
+               
+                <button id="submit" type="submit" class="btn btn-primary">Sign the Petition</button>
+            </form>
+            <canvas id="confetti"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Petition Information</h5>
+                    <p class="card-text">Join us in our mission to change the world:</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> contact@changetheworld.co</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+        <p>&copy; Project: 2023 Save the Earth. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../JavaScript_Files/script2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
