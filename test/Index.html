@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+  
+    <!--
+    This code block represents the header section of a webpage. It contains a navigation bar with links to different pages of the website. The navigation bar is collapsible and has a toggle button. The logo of the website is also displayed on the left side of the navigation bar.
+    -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -37,16 +41,23 @@
         </nav>
     </header>
 
+    <!-- 
+    This code contains the main content of the webpage, including a jumbotron with a call-to-action button that opens a popup window. The popup window contains three buttons that link to different pages of the webpages. 
+    The jumpotron is responsive and it is using Bootstrap's grid system to display the content in different screen sizes
+    -->
     <main>
-        <section class="hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
+        <div class="jumbotron text-white">
+            <div class="jumbotron-content">
                 <h2 id="mhead">Project: Save the Earth</h2>
                 <p>Join me in the fight for a sustainable future.</p>
-                <a href="#popup"><button class="btn btn-primary" onclick="openPopup()">Get Started</button></a>
+                <a href="#popup" class="btn btn-primary" onclick="openPopup()">Get Started</a>
             </div>
-        </section>
+        </div>
 
+      
+        <!-- 
+            This code represents a popup div element that contains three icons with links to redirect users to different pages of the website. The popup div element is hidden by default and it is displayed when the user clicks on the call-to-action button in the jumbotron section
+        -->
         <div id="popup">
             <span class="popup-close" onclick="closePopup()">&times;</span>
             <br> <br> <br>
@@ -57,7 +68,6 @@
                 <a href="SP_Enviroment.html"><img src="Image/Index/EnviromentSP.png" alt="Icon 3"></a>
             </div>
         </div>
-    </main>
 
     <div class="container">
         <section id="intro" class="row">
@@ -89,6 +99,11 @@
         </div>
     </footer>
 
+
+    <!-- 
+        This code block includes the script tags for four JavaScript files. 
+        The first script tag points to a local file named script1.js, while the other three script tags point to external files hosted on CDNs. 
+        These files are used to add functionality and styling to the webpage -->
     <script src="JavaScript Files/script1.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
