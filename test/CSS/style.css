@@ -1,4 +1,6 @@
-/* Title: Style.css */
+/* Author: Stanly Lau Wei Bin
+Class: DCITP/FT/1A/01
+Description: style.html*/
 
 
 /* Global styles */
@@ -6,8 +8,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 
 }
-
-
 
 header nav ul {
     display: flex;

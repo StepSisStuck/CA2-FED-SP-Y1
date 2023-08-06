@@ -1,12 +1,14 @@
+/* Author: Stanly Lau Wei Bin
+Class: DCITP/FT/1A/01
+Description: style2.html*/
+
+
+/* Sets the font family for the entire body */
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-}
-
-
+/* Styles the navigation bar */
 header nav ul {
     display: flex;
     align-items: center;
@@ -16,33 +18,41 @@ header nav ul {
     list-style: none;
 }
 
+/* Styles the container for the card image */
 .card-img-container {
-    height: 200px; /* Set the desired height for the card image container */
+    height: 200px; 
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
+/* Styles the card image */
 .card-img-top {
     max-height: 100%;
     max-width: 100%;
 }
 
+/* Styles the table */
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
+/* Styles the table header and data cells */
 th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
 }
+
+/* Styles the table header */
 th {
     background-color: #f2f2f2;
     font-weight: 700;
 }
 
+/* Styles the element with class "hot" */
 .hot {
     background-color: red;
     color: white;
