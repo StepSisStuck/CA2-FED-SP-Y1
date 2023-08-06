@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="Image/Main_Logo.png" alt="Logo" width="130" height="130"></a>
+                <a class="navbar-brand" href="#"><img src="../Image/Main_Logo.png" alt="Logo" width="130" height="130"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -58,7 +58,7 @@
         <!-- Water Dispensers -->
         <div class="col">
             <div class="card h-100">
-                <img src="Image/SP_Enviromental/plasticbottle.jpg" alt="Plastic bottles being made into a new life" class="card-img-top">
+                <img src="../Image/SP_Enviromental/plasticbottle.jpg" alt="Plastic bottles being made into a new life" class="card-img-top">
                 <div class="card-body">
                     <h2 class="card-title">Water Dispensers</h2>
                     <p class="card-text">We cultivate eco-conscious habits by encouraging students and staff to use water dispensers around campus and have ceased the use of plastic bottled water at our events.</p>
@@ -66,19 +66,21 @@
             </div>
         </div>
         <!-- Floral Species -->
-        <div class="col">
+        <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-                <img src="Image/SP_Enviromental/Flora.png" alt="A flower near Food Court 1" class="card-img-top">
+                <img src="../Image/SP_Enviromental/Flora.png" alt="A flower near Food Court 1" class="card-img-top img-fluid" style="max-height: 350px;">
                 <div class="card-body">
                     <h2 class="card-title">Species of Flora</h2>
                     <p class="card-text">SP's lush campus is home to an incredible biodiversity of plants including our majestic Brown Woolly Fig Heritage Trees found near Food Court 1.</p>
                 </div>
             </div>
         </div>
+        
+        
         <!-- Green Mark Platinum -->
         <div class="col">
             <div class="card h-100">
-                <img src="Image/SP_Enviromental/Near_T18.png" alt="A building near T18" class="card-img-top">
+                <img src="../Image/SP_Enviromental/Near_T18.png" alt="A building near T18" class="card-img-top">
                 <div class="card-body">
                     <h2 class="card-title">Green Mark Platinum Buildings</h2>
                     <p class="card-text">T18A, T18B, T3B and the SP Sports Arena have been certified Green Mark Platinum with on-going efforts to certify all 22 buildings in SP by 2025.</p>
@@ -88,30 +90,33 @@
         <!-- Smart Sensors -->
         <div class="col">
             <div class="card h-100">
-                <img src="Image/SP_Enviromental/temperature-control.png" alt="A guy gaining knowledge" class="card-img-top">
+                <img src="../Image/SP_Enviromental/temperature-control.png" alt="A guy gaining knowledge" class="card-img-top" >
                 <div class="card-body">
                     <h2 class="card-title">500+ Smart Sensors Around Campus</h2>
                     <p class="card-text">Many facilities on campus are monitored with smart sensors to track human traffic and monitor air quality for the health and well-being of students and staff.</p>
+                    <a href="https://www.flaticon.com/free-icons/sensor" title="sensor icons">Sensor icons created by LAFS - Flaticon</a>
                 </div>
             </div>
         </div>
         <!-- Smart Offices -->
         <div class="col">
             <div class="card h-100">
-                <img src="Image/SP_Enviromental/Life_in_a_city-bro.png" alt="A guy gaining knowledge" class="card-img-top">
+                <img src="../Image/SP_Enviromental/Life_in_a_city-bro.png" alt="A guy gaining knowledge" class="card-img-top">
                 <div class="card-body">
                     <h2 class="card-title">4 Smart Offices</h2>
                     <p class="card-text">Enhancing the work environment for the health and well-being of our staff through air quality and temperature sensors in our offices.</p>
+                    <a href="https://storyset.com/transport">Transport illustrations by Storyset</a>
                 </div>
             </div>
         </div>
         <!-- CCC -->
         <div class="col">
             <div class="card h-100">
-                <img src="Image/SP_Enviromental/Learning-bro.png" alt="Sustainability Image" class="card-img-top">
+                <img src="../Image/SP_Enviromental/Learning-bro.png" alt="Sustainability Image" class="card-img-top">
                 <div class="card-body">
                     <h2 class="card-title">13 Diplomas featuring Common Core Curriculum (CCC)</h2>
                     <p class="card-text">The CCC prepares our students for the green economy by exposing them to inter-disciplinary learning experiences and global issues, framed by the SG Green Plan and the United Nations’ Sustainable Development Goals, where they will learn to develop prototype sustainability solutions for real-life issues.</p>
+                    <a href="https://storyset.com/people">People illustrations by Storyset</a>
                 </div>
             </div>
         </div>
@@ -128,6 +133,45 @@
         </div>
     </section>
 
+    <section class="container">
+        <h2>Temperature Data</h2>
+        <table id="temperatureTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Temperature (°C)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add rows with hard-coded data -->
+                <tr>
+                    <td>1st August 2023</td>
+                    <td>28.5</td>
+                </tr>
+                <tr>
+                    <td>2nd August 2023</td>
+                    <td>32.1</td>
+                </tr>
+                <tr>
+                    <td>3rd August 2023</td>
+                    <td>35.8</td>
+                </tr>
+                <tr>
+                    <td>4th August 2023</td>
+                    <td>29.3</td>
+                </tr>
+                <tr>
+                    <td>5th August 2023</td>
+                    <td>30.2</td>
+                </tr>
+                <tr>
+                    <td>6th August 2023</td>
+                    <td>31.1</td>   
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <!-- Footer section with copyright -->
     <footer>
         <div class="container">
@@ -137,6 +181,6 @@
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
- <script src="JavaScript Files/script3.js"></script>
+ <script src="../JavaScript_Files/script3.js"></script>
 </body>
 </html>

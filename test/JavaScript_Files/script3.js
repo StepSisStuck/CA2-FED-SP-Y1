@@ -30,3 +30,19 @@
 
         // Call the function to show a random tip when the page is loaded or refreshed
         showRandomTip();
+
+        // When the temperature is above 30 degrees, change the text color to red
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('#temperatureTable tbody tr');
+        
+            rows.forEach(row => {
+                const temperatureCell = row.querySelector('td:nth-child(2)');
+                const temperatureValue = parseFloat(temperatureCell.textContent);
+        
+                if (temperatureValue > 30) {
+                    temperatureCell.style.color = 'red';
+                }
+            });
+        });
+        
+        
